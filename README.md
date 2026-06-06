@@ -6,13 +6,13 @@ AI Travel Planner is an AI-powered web application designed to help users plan t
 
 ## Features
 
-AI-Powered Travel Assistant
-Personalized Destination Recommendations
-Hotel Suggestions and Travel Guidance
-Budget Planning Assistance
-PDF Document Processing
-Smart Information Retrieval using Vector Database
-Interactive User-Friendly Interface
+* AI-Powered Travel Assistant
+* Personalized Destination Recommendations
+* Hotel Suggestions and Travel Guidance
+* Budget Planning Assistance
+* PDF Document Processing
+* Smart Information Retrieval using Vector Database
+* Interactive and User-Friendly Interface
 
 ## Technologies Used
 
@@ -36,17 +36,6 @@ Frameworks & Concepts: RAG (Retrieval-Augmented Generation), Agentic AI
 3. Relevant information is retrieved through the vector database.
 4. AI generates personalized travel recommendations.
 5. Results are displayed to the user in an easy-to-understand format.
-
-## Project Structure
-
-AI-Travel-Planner/
-│
-├── app.py
-├── static/
-├── templates/
-├── utils/
-├── .gitignore
-└── README.md
 
 ## Future Enhancements
 
