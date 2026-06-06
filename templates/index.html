@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>AI Travel Planner</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1> AI Travel Planner </h1>
+
+    <!-- Upload PDF -->
+
+    <form action="/upload"
+          method="POST"
+          enctype="multipart/form-data">
+
+        <input type="file"
+               name="pdf"
+               required>
+
+        <button type="submit">
+
+             Upload PDF
+
+        </button>
+
+    </form>
+
+
+    <!-- Travel Form -->
+
+    <form action="/plan"
+          method="POST">
+
+        <input type="text"
+               name="location"
+               placeholder=" Enter Destination"
+               required>
+
+        <input type="number"
+               name="budget"
+               placeholder="Enter Budget"
+               required>
+
+        <input type="number"
+               name="days"
+               placeholder="Number of Days"
+               required>
+
+        <button type="submit">
+
+             Plan My Trip
+
+        </button>
+
+    </form>
+
+
+    <!-- Output -->
+
+    {% if response %}
+
+    <div class="result">
+
+        <div class="ai-output">
+
+            {{ response|safe }}
+
+        </div>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
